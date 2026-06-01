@@ -14,3 +14,7 @@ en el directorio actual.
 6. Revisar que todo se registro correctamente volviendo a ejectuar "git status"
 
 7. Para crear un backup rapido usamos el comando "git commit -m "mensaje de backup"
+
+8. Para cambiarnos de versiones usamos el comando "git checkout <nombre de la version>"
+
+9. Para enviar los cambios al repositorio vamos a utilizar el comando "git push"
