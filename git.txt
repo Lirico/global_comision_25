@@ -1,0 +1,8 @@
+
+
+1. En primer lugar vamos a utilizar el comando "git init" para inicializar el repositorio
+en el directorio actual.
+
+2. Para vincularnos con un repositorio utilizamos el comando "git remote add origin <URL del repositorio>"
+
+3. Para revisar que la vinculacion esta correctamente realizada utilizamos el comando "git remote -v".
