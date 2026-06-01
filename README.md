@@ -77,6 +77,7 @@ Una vez que la carpeta se genera ya pueden arrastrarla al ícono de Visual Studi
 
 ### Cambiar de rama
 - git checkout [nombre rama]
+- git checkout [id_commit]
 
 ### Actualizar el proyecto de repo a PC
 - git pull: Arrastra cambios que existen en el repo pero no en la PC, del repo a la PC.
