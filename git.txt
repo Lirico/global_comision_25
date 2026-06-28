@@ -18,3 +18,6 @@ en el directorio actual.
 8. Para cambiarnos de versiones usamos el comando "git checkout <nombre de la version>"
 
 9. Para enviar los cambios al repositorio vamos a utilizar el comando "git push"
+
+
+Me gusta el pancito
