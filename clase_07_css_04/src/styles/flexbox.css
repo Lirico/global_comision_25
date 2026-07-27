@@ -1,0 +1,140 @@
+/* 
+    FLEXBOX
+
+    Es una caracteristca de CSS que nos permite distribuir los elementos
+    hijos de un contenedor dentro del mismo de la forma que querramos,
+    con, obviamente, ciertas limitaciones.
+    
+    Para poder aplicar esa caracteristica tenemos que hacer como objetivo
+    al padre de estos elementos, es decir, al contenedor que los posee.
+
+
+    flex es uno de los valores de la propiedad "display".
+
+    De este valor desprenden otras propiedades que solo funcionan sobre
+    un elemento declarado como flexible.
+    
+    1. flex-direction -> Selecciona la direccion de los elementos hijos
+    para que tomen direccion de columna o fila.
+
+    2. justify-content -> Selecciona como se distribuyen los elementos en 
+    el eje X del contenedor padre.
+
+    3. align-items -> Selecciona como se distribuyen los elementos en el eje
+    Y del contenedor padre.
+
+    4. flex-wrap -> Elije el comportamiento de los hijos cuando el ancho 
+    del contenedor padre no es lo suficientemente ancho como para albergar
+    a todos los hijos en la misma fila.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+.container {
+  background-color: orange;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.dos {
+    align-self: end;
+}
+.tres {
+    align-self: start;
+} */
+
+/* CSS Nesting (anidado CSS) */
+
+/****** HEADER ******/
+header {
+  display: flex;
+  flex-direction: column;
+
+  & .session_menu {
+    background-color: green;
+    display: flex;
+    justify-content: end;
+
+    & div {
+      color: white;
+      font-size: 0.6rem;
+      padding: 4px 2% 7px 2%;
+    }
+  }
+
+  & .main_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 2%;
+    border-bottom: 1px solid lightgray;
+
+    & form {
+      width: 20%;
+      display: flex;
+
+      & input {
+        background-color: transparent;
+        border: 2px solid green;
+        border-radius: 9999px;
+        padding: 8px 16px;
+      }
+
+      & input::placeholder {
+        color: gray;
+        font-size: 0.6rem;
+      }
+    }
+    & .logo_container {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      & img {
+        width: 80px;
+      }
+    }
+    & .cart_button_container {
+      width: 20%;
+      display: flex;
+      justify-content: end;
+
+      & button {
+        background-color: transparent;
+        border: 2px solid green;
+        border-radius: 9999px;
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  & .nav_menu {
+    & ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: gray;
+      list-style: none;
+      font-size: 0.75rem;
+      column-gap: 2%;
+      padding: 10px;
+    }
+  }
+}
+
+/****** PERRITOS ******/

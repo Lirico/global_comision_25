@@ -1,0 +1,101 @@
+/********** DIMENSIONES *************/
+/* 
+    Aquellas medidas que pueden modificar el aspecto de un elemento CSS de manera absoluta o relativa.
+
+    ABSOLUTAS -> cm, kg, px, inch
+
+    RELATIVA -> %, view width, view height, rem, em
+
+    El truco para poder colocar elementos de bloque uno al lado
+    del otro depende del valor de despliegue que seleccionemos.
+
+
+    Durante muchos años, la forma de intentar adaptar la estructura
+    visual de los elementos a diferentes dispositivos dependia
+    de las propiedades display: inline-block y la propieda float.
+    Esta practica cayó en desuso cuando en la versión CSS3 se 
+    incorporan 2 nuevos sistemas: Flexbox y Grid.
+*/
+
+/* * {
+    margin: 0;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+span {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+} */
+
+
+
+/* div {
+    width: 100%;
+    height: 250px;
+    background-color: brown;
+}
+
+article {
+    width: 25%;
+    height: inherit;
+    background-color: aqua;
+} */
+
+/* * {
+    margin: 0;
+}
+
+
+div {
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+}
+section {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+} */
+
+
+html {
+    font-size: 20px; /* 1 rem -> 20px */
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.50rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+
+.rebelde {
+    font-size: 12px; /* 1 em -> 12px */
+}
+
+.rebelde h1 {
+    font-size: 2em;
+}
+.rebelde h2 {
+    font-size: 1.75em;
+}
+.rebelde h3 {
+    font-size: 1.50em;
+}
+.rebelde h4 {
+    font-size: 1.25em;
+}

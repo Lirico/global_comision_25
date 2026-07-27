@@ -1,0 +1,47 @@
+/******** MODELANDO CAJAS **********/
+/* 
+    En CSS consideramos cada elemento html como una
+    caja moldeable.
+    Cada una de estas cajas está compuesta por 4 
+    caracteristicas que podemos modificar para adaptarlas
+    a nuestras necesidades.
+    Estas son: 
+    1. Contenido
+    2. Relleno (padding)
+    3. Borde (border)
+    4. Margen (margin)
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    background-color: orange;
+    display: inline-block;
+    padding: 0 0 0 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .uno {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+.dos {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+} */

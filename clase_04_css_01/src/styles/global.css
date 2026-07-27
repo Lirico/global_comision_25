@@ -1,0 +1,68 @@
+
+
+/* SELECTOR DE ETIQUETA */
+nav {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SELECTOR DE CLASE */
+.noruega {
+    color: white;
+    background-color: red;
+    border: 2px solid blue;
+}
+.mexico {
+    color: red;
+    background-color: green;
+}
+
+/* SELECTOR DE ID */
+#primero {
+    border: 3px solid aqua;
+}
+
+/* SELECTOR UNIVERSAL */
+/* * {
+    color: pink;
+} */
+
+/*********** ESPECIFICDAD ***********/
+h1 {
+    color: blue;
+}
+.titulo {
+    color: brown;
+}
+#unico {
+    color: yellow
+}
+
+
+
+/************ SELECTORES COMBINADOS ************/
+/* SELECTOR DE HIJOS */ 
+/* section > p {
+    color: aqua;
+} */
+
+
+/* SELECTOR DE DESCENDIENTES */ 
+/* section p {
+    color: aqua;
+} */
+
+/* SELECTOR DE HERMANOS */ 
+/* h2 ~ p {
+    color: red;
+} */
+
+/* SELECTOR DE ATRIBUTOS */ 
+/* input[type="text"]{
+   color: red; 
+} */
