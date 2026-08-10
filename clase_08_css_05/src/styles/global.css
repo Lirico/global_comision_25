@@ -1,0 +1,90 @@
+
+/********** GRID ***********/
+/* 
+    Es un sistema de estructura que permite moldear nuestros contenedores para
+    que sus hijos se ordenen en forma de columnas, filas o una combinacion de ambas,
+    lo que comunmente denominamos "grilla".
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* .container {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.column {
+    background-color: grey;
+    border: 1px solid white;
+    color: white;
+} */
+
+
+
+
+/********* MEDIA QUERY *********/
+/* 
+    Es una tecnica que permite que definamos como deseamos que se presente una
+    determinada propiedad dependiendo de ancho del dispositivo del cual se está
+    observando.
+
+    Ejemplo: propiedad "color"
+    Desde mobile -> 580px -> color: red;
+    Desde tablet -> 768px -> color: blue;
+    Desde desktop -> 1400px -> color: yellow;
+
+    Cantidad de columnas 
+    Desde mobile -> 1 unica columna
+    Desde tablet -> 2 columnas
+    Desde desktop -> 4 columnas
+*/
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+}
+
+.column {
+    background-color: red;
+    border: 2px solid black;
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .column {
+        background-color: blue;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1400px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .column {
+        background-color: yellow;
+    }
+}
+
+/* 
+    Si definimos las actualizaciones desde el mas grande al
+    mas chico usamos max-width.
+
+    Si definimos las actualizaciones desde el mas chico al
+    mas grande usamos min-width.
+*/
