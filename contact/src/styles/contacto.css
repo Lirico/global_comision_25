@@ -1,0 +1,135 @@
+/*********** CUSTOM PROPERTIES ***********/
+:root {
+  --primary-color: #4191ff;
+  --white-color: #ffffff;
+  --grey-light-color: #c0c0c0;
+  --primary-font: "Roboto", sans-serif;
+}
+
+/*********** RESET ************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+
+/********* PAGE STYLES *********/
+/****** CONTACT ******/
+.contact {
+  background-color: var(--primary-color);
+  height: 110vh;
+  width: 100%;
+
+  & .contact_grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: inherit;
+    width: inherit;
+
+    & .contact_form_grid_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 90%;
+
+        & input,
+        textarea,
+        button {
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.2rem;
+          padding: 1rem;
+        }
+        & input::placeholder,
+        textarea::placeholder {
+          color: var(--grey-light-color);
+        }
+        & textarea {
+          font-family: var(--primary-font);
+        }
+        & button {
+          background-color: var(--primary-color);
+          border: 3px solid var(--white-color);
+          color: var(--white-color);
+          cursor: pointer;
+          font-size: 1.3rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          transition: 0.3s;
+        }
+        & button:hover {
+          background-color: var(--white-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    & .contact_map_grid_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & iframe {
+        border-radius: 0.5rem;
+        width: 90%;
+        height: 400px;
+      }
+    }
+  }
+}
+
+/****** TABLET ******/
+@media screen and (min-width: 900px) {
+  /****** CONTACT ******/
+  .contact {
+    height: 100vh;
+
+    & .contact_grid_container {
+      grid-template-columns: 50% 50%;
+
+      & .contact_map_grid_item {
+        & iframe {
+          height: 550px;
+        }
+      }
+    }
+  }
+}
+
+
+/****** DESKTOP ******/
+@media screen and (min-width: 1300px) {
+  /****** CONTACT ******/
+  .contact {
+    height: 100vh;
+
+    & .contact_grid_container {
+      grid-template-columns: 60% 40%;
+
+      & .contact_map_grid_item {
+        & iframe {
+          height: 550px;
+        }
+      }
+    }
+  }
+}
